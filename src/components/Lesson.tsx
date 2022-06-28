@@ -7,7 +7,6 @@ interface LessonProps {
   title: string;
   slug: string;
   availableAt: Date;
-  setBurgerOpen: any;
   type: "live" | "class";
 }
 
@@ -21,13 +20,7 @@ export function Lesson(props: LessonProps) {
     }
   );
   return (
-    <Link
-      to={`/lesson/${props.slug}`}
-      onClick={(e) => {
-        props.setBurgerOpen(false);
-      }}
-      className="group"
-    >
+    <Link to={`/lesson/${props.slug}`} className="group">
       <span className="text-gray-300">{availableDateFormatted}</span>
 
       <div className="rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500">

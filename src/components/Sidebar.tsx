@@ -46,7 +46,6 @@ export function Sidebar(props: SidebarProps) {
                 slug={lesson.slug}
                 availableAt={new Date(lesson.availableAt)}
                 type={lesson.lessonType}
-                setBurgerOpen
               />
             );
           })}
@@ -68,7 +67,6 @@ export function Sidebar(props: SidebarProps) {
                   slug={lesson.slug}
                   availableAt={new Date(lesson.availableAt)}
                   type={lesson.lessonType}
-                  setBurgerOpen
                 />
               );
             })}
