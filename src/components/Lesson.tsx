@@ -7,7 +7,7 @@ interface LessonProps {
   title: string;
   slug: string;
   availableAt: Date;
-  setBurgerOpen: (boolean) => void;
+  setBurgerOpen: any;
   type: "live" | "class";
 }
 
