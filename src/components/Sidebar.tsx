@@ -30,7 +30,6 @@ interface SidebarProps {
 export function Sidebar(props: SidebarProps) {
   const { data } = useQuery<GetLessonQueryResponse>(GET_LESSON_QUERY);
 
-  console.log("sidebar", props.burguerOpen);
   return (
     <>
       <aside className="hidden lg:block w-[348px] bg-gray-700 p-6 border-l border-gray-600">
@@ -47,6 +46,7 @@ export function Sidebar(props: SidebarProps) {
                 slug={lesson.slug}
                 availableAt={new Date(lesson.availableAt)}
                 type={lesson.lessonType}
+                setBurgerOpen
               />
             );
           })}
@@ -68,6 +68,7 @@ export function Sidebar(props: SidebarProps) {
                   slug={lesson.slug}
                   availableAt={new Date(lesson.availableAt)}
                   type={lesson.lessonType}
+                  setBurgerOpen
                 />
               );
             })}
