@@ -11,7 +11,7 @@ interface HeaderProps {
 export function Header(props: HeaderProps) {
   return (
     <header className="fixed top-0  z-[99999] w-full py-6 flex items-center justify-between px-4 lg:justify-center bg-gray-700 border-b border-gray-600">
-      <Link to="/event">
+      <Link to="/">
         <Logo />
       </Link>
 
