@@ -22,10 +22,10 @@ export function Event() {
         ) : (
           <div className="flex-1 flex flex-col justify-center items-center gap-2">
             <Rocket size={50} className="text-gray-200" />
-            <strong className="text-5xl text-green-300">
+            <strong className="text-5xl text-center text-green-300">
               Boas vindas ao Ignite Lab
             </strong>
-            <p className="text-2xl text-gray-200">
+            <p className="text-2xl text-center text-gray-200">
               Clique em uma aula para iniciar sua jornada
             </p>
           </div>
